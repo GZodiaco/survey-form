@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lan="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>fCC Project Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="home-content">
+      <header>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <form
+        id="survey-form"
+        >
+        <div class="form-group">
+          <label id="name-label" for="name">Name <input type="text" required id="name" placeholder="Enter your name"/></label>
+          <label id="email-label" for="email">Email <input  type="email" required id="email" placeholder="Enter you Email" /></label>
+          <label id="number-label" for="number"
+            >Age (optional) <input  type="number" min="13" max="100" max id="number" placeholder="Age"
+          /></label>
+          <label
+                  >Which option best describes your current role?
+                  <select id="dropdown">
+                    <option value="">Select current role</option>
+                    <option value="1">Student</option>
+                    <option value="2">Full Time Job</option>
+                    <option value="3">Full Time Learner</option>
+                    <option value="4">Prefer not to say</option>
+                    <option value="5">Other</option>
+                  </select>
+                </label>
+              </div>
+              <div class="form-group">
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <label for="definitely"><input name="input-refer" id="definitely" checked type="radio" value="def" /> Definitely</label>
+                <label for="maybe"><input name="input-refer" id="maybe" type="radio" value="may" /> Maybe</label>
+                <label for="not-sure"><input name="input-refer" id="not-sure" type="radio" value="not" /> Not Sure</label>
+              </div>
+              <div class="form-group">
+                <!--feature selection-->
+                <label
+                  >What is your favorite feature of freeCodeCamp?
+                  <select>
+                    <option value="">Select an option</option>
+                    <option value="6">Challenges</option>
+                    <option value="7">Projects</option>
+                    <option value="8">Community</option>
+                    <option value="9">Open Source</option>
+                  </select>
+                </label>
+              </div>
+              <div class="form-group">
+                <!--multi-choice critique-->
+                <p>What would you like to see improved? (Check all that apply)</p>
+                <label for=""><input type="checkbox" value="0" /> Front-end Projects</label>
+                <label for=""><input type="checkbox" value="1"/> Back-end Projects</label>
+                <label for=""><input type="checkbox" value="2"/> Data Visualization</label>
+                <label for=""><input type="checkbox" value="3"/> Challenges</label>
+                <label for=""><input type="checkbox" value="4"/> Open Source Community</label>
+                <label for=""><input type="checkbox" value="5"/> Gitter help rooms</label>
+                <label for=""><input type="checkbox" value="6"/> Videos</label>
+                <label for=""><input type="checkbox" value="7"/> City Meetups</label>
+                <label for=""><input type="checkbox" value="8"/> Wiki</label>
+                <label for=""><input type="checkbox" value="9"/> Forum</label>
+                <label for=""><input type="checkbox" value="10"/> Additional Courses</label>
+              </div>
+              <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea
+                  placeholder="Enter you comment here..."
+                  name=""
+                  id=""
+                  cols="100"
+                  rows="10"
+                ></textarea>
+              </div>
+              <button type="submit" id="submit" class="submit-button" />Submit</button>
+            </form>
+        </div>
+    
+   
+   
+  </body>
+</html>
